@@ -190,26 +190,3 @@ encoded_df.head()
 
 # # %% [markdown]
 # # **Feature Scaling**
-
-# %%
-import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.utils import to_categorical
-from sklearn.model_selection import train_test_split
-import numpy as np
-
-# Generate some dummy data
-# Replace this with your actual data and labels
-data = np.random.random((1000, 20))
-labels = np.random.randint(10, size=(1000, 1))
-
-# Convert labels to one-hot encoding
-labels = to_categorical(labels)
-labels
-
-# %%
-import tensorflow as tf
-
-(x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
-y_train
